@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IG Bootstrap</title>
+</head>
+<body>
+    
+    <div class="d-flex flex-column">
+        <!-- Aqui comienza la barra de navegación -->
+        <nav class="navbar navbar-light bg-light col-12">
+            <div class="col ms-2">
+                <a class="navbar-brand" href="#">
+                <img src="https://img.icons8.com/?size=512&id=44907&format=png" alt="" width="30" height="24" class="d-inline-block align-text-center">
+                Instagram
+                </a>
+            </div>
+            <div class="col-2">
+                <!-- Boton del modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                    </button>
+                <!-- Esto es el contenido del modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <strong>Caption:</strong>
+                                <textarea class="form-control" placeholder="Add the caption of your post here"  id="miTextarea" rows="3"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui comienza el dropdown -->
+            <div class="col-2">
+                <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://images.icon-icons.com/1788/PNG/512/nuticon_114497.png" alt="" width="24" height="20">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Aqui comienzo a crear las pestañas -->
+        <div class="text-center">
+            <nav>
+                <ul class="nav nav-tabs d-inline-flex">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#feed" role="tab" aria-controls="feed" aria-selected="false">
+                            <img src="https://images.icon-icons.com/1369/PNG/512/-grid-on_90477.png" width="15" height="15" alt="">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="nav-post-tab" data-bs-toggle="tab" data-bs-target="#post" role="tab" aria-controls="post" aria-selected="false">
+                            <img src="https://cdn-icons-png.flaticon.com/512/10765/10765884.png" width="15" height="15" alt="">
+                        </button>
+                    </ul>
+                    <!-- Aqui comienza el contenido de las pestañas -->
+                    <div class="tab-content m-3">
+                        <div class="tab-pane fade show active" id="feed">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-4 mb-3" href="post-1">
+                                    <img src="https://media.istockphoto.com/id/513133900/es/foto/oro-retriever-sentado-en-frente-de-un-fondo-blanco.jpg?s=612x612&w=0&k=20&c=0lRWImB8Y4p6X6YGt06c6q8I3AqBgKD-OGQxjLCI5EY=" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-2">
+                                    <img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/11/05/151105164845_cristiano_ronaldo_624x415_getty_nocredit.jpg.webp" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-3">
+                                    <img src="https://media.istockphoto.com/id/1380534040/es/foto/hermosa-vista-de-amalfi-en-la-costa-mediterr%C3%A1nea-con-limones-en-primer-plano-italia.jpg?s=612x612&w=0&k=20&c=puq5zvDjVXCFtfYCtPggPD4ZzBDsJ4BuDhqq-XOJvI0=" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-4">
+                                    <img src="https://media.istockphoto.com/id/1428235898/es/foto/elegante-mujer-africana-bonita-con-peinado-afro-posando-cerca-de-la-pared-geom%C3%A9trica.jpg?s=612x612&w=0&k=20&c=wLBV4xejWgi8pDPRwinwZSVntq7_AHRQ4jfmA2wfob4=" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-5">
+                                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/02/14/torre-eiffel_6e9796fd_278483323_240214093442_1280x853.jpg" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-6">
+                                    <img src="https://t4.ftcdn.net/jpg/04/85/39/87/360_F_485398728_aKL9duq8W78nnZ65BR3oGRMgari0sWEG.jpg" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-7">
+                                    <img src="https://plus.unsplash.com/premium_photo-1661679465291-9d9e127b6668?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm90byUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-8">
+                                    <img src="https://media.istockphoto.com/id/1047259374/es/foto/antecedentes-del-c%C3%B3digo-de-fuente-programaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=yMfu6IC_bANhI6H0Lkpoau_24lYRwkd17tvhv7n3z8s=" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                                <div class="col-4 mb-3" href="post-9">
+                                    <img src="https://www.shutterstock.com/image-photo/successful-collaboration-learning-friendly-young-600nw-2608441691.jpg" class="img-fluid" style="height: 250px; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="tab-pane fade" id="post" role="tab" aria-labelledby="nav-post-tab">
+                        <div class="mx-auto d-flex flex-column align-items-center" style="width: 35%;">
+                            <div class="border mb-5" id="post-1">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>El golden de Marley & Me</h6>
+                                    <span class="text-muted small">1/9</span>
+                                </div>
+                                <img src="https://media.istockphoto.com/id/513133900/es/foto/oro-retriever-sentado-en-frente-de-un-fondo-blanco.jpg?s=612x612&w=0&k=20&c=0lRWImB8Y4p6X6YGt06c6q8I3AqBgKD-OGQxjLCI5EY=" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 2345</strong><br>
+                                    <p style="font-size: small;">No hay mucho que decir, este perro es genial!</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-2">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>CR7</h6>
+                                    <span class="text-muted small">2/9</span>
+                                </div>
+                                <img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/11/05/151105164845_cristiano_ronaldo_624x415_getty_nocredit.jpg.webp" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 90M</strong><br>
+                                    <p style="font-size: small;">Uno de los más grandes delanteros de la historia</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-3">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Bella Italia</h6>
+                                    <span class="text-muted small">3/9</span>
+                                </div>
+                                <img src="https://media.istockphoto.com/id/1380534040/es/foto/hermosa-vista-de-amalfi-en-la-costa-mediterr%C3%A1nea-con-limones-en-primer-plano-italia.jpg?s=612x612&w=0&k=20&c=puq5zvDjVXCFtfYCtPggPD4ZzBDsJ4BuDhqq-XOJvI0=" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 12545</strong><br>
+                                    <p style="font-size: small;">La bella Amalfi, un destino que visitar.</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-4">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Estilo afro</h6>
+                                    <span class="text-muted small">4/9</span>
+                                </div>
+                                <img src="https://media.istockphoto.com/id/1428235898/es/foto/elegante-mujer-africana-bonita-con-peinado-afro-posando-cerca-de-la-pared-geom%C3%A9trica.jpg?s=612x612&w=0&k=20&c=wLBV4xejWgi8pDPRwinwZSVntq7_AHRQ4jfmA2wfob4=" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 9456</strong><br>
+                                    <p style="font-size: small;">Mucho flow por aquí!</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-5">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Paris</h6>
+                                    <span class="text-muted small">5/9</span>
+                                </div>
+                                <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/02/14/torre-eiffel_6e9796fd_278483323_240214093442_1280x853.jpg" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 2345</strong><br>
+                                    <p style="font-size: small;">La ciudad del amor, dicen...</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-6">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Amigos!</h6>
+                                    <span class="text-muted small">6/9</span>
+                                </div>
+                                <img src="https://t4.ftcdn.net/jpg/04/85/39/87/360_F_485398728_aKL9duq8W78nnZ65BR3oGRMgari0sWEG.jpg" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 33345</strong><br>
+                                    <p style="font-size: small;">No hay mejor terapia que pasar un buen rato.</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-7">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Family</h6>
+                                    <span class="text-muted small">7/9</span>
+                                </div>
+                                <img src="https://plus.unsplash.com/premium_photo-1661679465291-9d9e127b6668?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm90byUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 5000</strong><br>
+                                    <p style="font-size: small;">La familia siempre sera la familia.</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-8">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Coding</h6>
+                                    <span class="text-muted small">8/9</span>
+                                </div>
+                                <img src="https://media.istockphoto.com/id/1047259374/es/foto/antecedentes-del-c%C3%B3digo-de-fuente-programaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=yMfu6IC_bANhI6H0Lkpoau_24lYRwkd17tvhv7n3z8s=" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 2345</strong><br>
+                                    <p style="font-size: small;">Programando el futuro.</p>
+                                </div>
+                            </div>
+                            <div class="border mb-5" id="post-9">
+                                <div class="border d-flex justify-content-between text-start px-1 pt-3" style="height: 50px;" id="header-post">
+                                    <h6>Study time!</h6>
+                                    <span class="text-muted small">9/9</span>
+                                </div>
+                                <img src="https://www.shutterstock.com/image-photo/successful-collaboration-learning-friendly-young-600nw-2608441691.jpg" class="img-fluid" style="height: 400px; object-fit: cover;">
+                                <div class="text-start border ps-1" id="footer">
+                                    <strong>Likes 2345</strong><br>
+                                    <p style="font-size: small;">La union hace la fuerza</p>
+                                </div>
+                            </div>                   
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
